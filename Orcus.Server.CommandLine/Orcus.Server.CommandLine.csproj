@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" />
+  <!-- <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" /> -->
   <ItemGroup>
     <Reference Include="FluentCommandLineParser">
       <HintPath>..\References\FluentCommandLineParser.dll</HintPath>

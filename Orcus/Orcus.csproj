@@ -66,8 +66,11 @@
       <HintPath>..\References\AForge.Video.DirectShow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="CSCore, Version=1.1.6245.30570, Culture=neutral, PublicKeyToken=5a08f2b6f4415dea, processorArchitecture=MSIL">
-      <HintPath>..\packages\CSCore.1.2.0\lib\net35-client\CSCore.dll</HintPath>
+    <Reference Include="CSCore, Version=1.2.1.2, Culture=neutral, PublicKeyToken=5a08f2b6f4415dea, processorArchitecture=MSIL">
+      <HintPath>..\packages\CSCore.1.2.1.2\lib\net35-client\CSCore.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentCommandLineParser, Version=1.4.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentCommandLineParser.1.4.3\lib\net35\FluentCommandLineParser.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>

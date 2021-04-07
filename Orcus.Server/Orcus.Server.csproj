@@ -38,7 +38,7 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\RemoteServer.ico</ApplicationIcon>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" />
+  <!--<Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" />-->
   <ItemGroup>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\References\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -209,7 +209,7 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Fody.1.29.4\build\dotnet\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.1.29.4\build\dotnet\Fody.targets'))" />
   </Target>
-  <Import Project="$(SolutionDir)\Build\Orcus.PostSettings.targets" />
+  <!--<Import Project="$(SolutionDir)\Build\Orcus.PostSettings.targets" />-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

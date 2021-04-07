@@ -33,18 +33,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" />
+  <!-- <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" /> !-->
   <ItemGroup>
-    <Reference Include="Exceptionless.Signed, Version=4.0.1934.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Signed.4.0.1934\lib\net45\Exceptionless.Signed.dll</HintPath>
+    <Reference Include="Exceptionless.Signed, Version=4.3.2027.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exceptionless.Signed.4.3.2027\lib\net45\Exceptionless.Signed.dll</HintPath>
     </Reference>
-    <Reference Include="Exceptionless.Wpf.Signed, Version=4.0.1934.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
-      <HintPath>..\packages\Exceptionless.Wpf.Signed.4.0.1934\lib\net45\Exceptionless.Wpf.Signed.dll</HintPath>
+    <Reference Include="Exceptionless.Wpf.Signed, Version=4.3.2027.0, Culture=neutral, PublicKeyToken=fc181f0a46f65747, processorArchitecture=MSIL">
+      <HintPath>..\packages\Exceptionless.Wpf.Signed.4.3.2027\lib\net45\Exceptionless.Wpf.Signed.dll</HintPath>
     </Reference>
-    <Reference Include="FluentCommandLineParser, Version=1.4.3.0, Culture=neutral, PublicKeyToken=851aa33cb9b88f1c, processorArchitecture=MSIL">
+    <Reference Include="FluentCommandLineParser, Version=1.4.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentCommandLineParser.1.4.3\lib\net35\FluentCommandLineParser.dll</HintPath>
-      <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.dll</HintPath>
       <Private>True</Private>
@@ -61,9 +61,8 @@
       <HintPath>..\packages\Mono.Cecil.0.9.6.4\lib\net45\Mono.Cecil.Rocks.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.4.4\lib\net45\NLog.dll</HintPath>
@@ -77,6 +76,7 @@
       <HintPath>..\References\starksoft.aspen.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.Drawing.dll</HintPath>
@@ -84,6 +84,9 @@
     <Reference Include="System.IO.Compression">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.IO.Compression.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -93,9 +96,8 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="Vestris.ResourceLib, Version=1.5.328.0, Culture=neutral, PublicKeyToken=ec632d8ba5e5750d, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vestris.ResourceLib.1.5.328.0\lib\Vestris.ResourceLib.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Vestris.ResourceLib, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vestris.ResourceLib.2.1.0\lib\net45\Vestris.ResourceLib.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -248,7 +250,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\Build\Orcus.PostSettings.targets" />
+  <!-- <Import Project="$(SolutionDir)\Build\Orcus.PostSettings.targets" /> -->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

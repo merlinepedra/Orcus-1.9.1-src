@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-  <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" />
+  <!-- <Import Project="$(SolutionDir)\Build\Orcus.PreSettings.targets" /> -->
   <ItemGroup>
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\References\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -160,7 +160,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\Build\Orcus.PostSettings.targets" />
+  <!--<Import Project="$(SolutionDir)\Build\Orcus.PostSettings.targets" />-->
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
