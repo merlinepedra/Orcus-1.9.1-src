@@ -1,4 +1,4 @@
-# Schnorchel
+# Schnorchel Leaked by cortexnet.cc | hussaryn & snyke, enjoy.
 C# RAT with lots of features.
 
 ![Schnorchels](http://fs5.directupload.net/images/151117/xvvb5oey.png)
