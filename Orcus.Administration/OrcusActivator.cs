@@ -26,9 +26,15 @@ namespace Orcus.Administration
             if (IsValid)
                 IsRegistered = true;
         }
+/*
+        protected OrcusActivator()
+        {
+            HardwareId = HardwareIdGenerator.HardwareId;
+            IsValid = true;
+            IsRegistered = true;
+        }*/
 
         public static bool IsRegistered { get; set; }
-
         public bool IsValid { get; }
         public string HardwareId { get; }
 
@@ -46,6 +52,11 @@ namespace Orcus.Administration
                 return provider.VerifyData(dataBuffer, new SHA1CryptoServiceProvider(), signature);
             }
         }
+
+/*       public static OrcusActivator Parse(string licenseData)
+        {
+            return new OrcusActivator();
+        }*/
 
         public static OrcusActivator Parse(string licenseData)
         {
