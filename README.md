@@ -1,12 +1,10 @@
 # Orcus 1.9.1 Source Code 
-#### Donate BTC: bc1q048wrqztka5x2syt9mtj68uuf73vqry60s38vf
+     
 ## Build
 - Set the build option to `Release`
 - Press Ctrl + Shift + B to build the complete solution (do this until it does nothing if you build)
 - Set the build option back to `Debug`
 - Press Ctrl+ Shift + B again
-
-
 
 C# RAT with lots of features.
 
@@ -34,4 +32,6 @@ Just take a look at the [complete feature list](Features.md).
 # This repository doesn't contain my code. I have uploaded it to GitHub for those want to analyse the code.
 I'm not associated with the development and production of this program are not responsible for any actions and or damages caused by this software. You bear the full responsibility of your actions and acknowledge that this software was created for educational purposes only. This software's intended purpose is NOT to be used maliciously, or on any system that you do not have own or have explicit permission to operate and use this program on. By using this software, you automatically agree to the above.
 
-
+## 💵 Want to buy me a Coffee?
+     - Donate BTC at `bc1q048wrqztka5x2syt9mtj68uuf73vqry60s38vf`
+     - Donate ETH at `0x86b2C17C94A1E6f35d498d17a37dc1f8A715139b`
